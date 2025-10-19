@@ -4,11 +4,12 @@
   "description": "Autonomous development powered by Agentic OS",
   "type": "module",
   "scripts": {
-    "dev": "tsx src/index.ts",
-    "build": "tsc",
+    "dev": "next dev",
+    "build": "next build",
     "test": "vitest",
     "lint": "eslint . --ext .ts,.tsx",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "start": "next start"
   },
   "keywords": [
     "agentic-os",
@@ -17,7 +18,10 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "next-auth": "^4.24.11"
+    "next": "^15.5.6",
+    "next-auth": "^4.24.11",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.9.1",
